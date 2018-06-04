@@ -1,0 +1,7 @@
+; manually added to keep DNA fragment linear and avoid pcoord increases due to binding.
+; just a week constraint on 2 terminal P atoms.
+[ position_restraints ]
+; atom  type      fx      fy      fz
+   31     1  100  100  100
+   1254     1  100  100  100
+

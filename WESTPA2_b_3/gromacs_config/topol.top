@@ -1,0 +1,63 @@
+;
+;	File 'topol.top' was generated
+;	By user: unknown (1011)
+;	On host: oliba
+;	At date: Thu Aug  3 14:46:48 2017
+
+;
+;	This is a standalone topology file
+;
+;	Created by:
+;	                     :-) GROMACS - gmx pdb2gmx, 2016 (-:
+;	
+;	Executable:   /usr/local/gromacs/bin/gmx
+;	Data prefix:  /usr/local/gromacs
+;	Working dir:  /home/ramon/calculs/PCNA/prmBSC1/for_westpa/binary
+;	Command line:
+;	  gmx pdb2gmx -ignh -f start.pdb
+;	Force field was read from current directory or a relative path - path added.
+;
+
+; Include forcefield parameters
+#include "./amber99bsc1.ff/forcefield.itp"
+
+; Include chain topologies
+#include "topol_Protein_chain_A.itp"
+#include "topol_Protein_chain_B.itp"
+#include "topol_Protein_chain_C.itp"
+#include "topol_DNA_chain_F.itp"
+; manual constraints on the ending P atoms of DNA to keep it linear
+#include "posre_manual_chain_F.itp"
+#include "topol_DNA_chain_G.itp"
+; manual constraints on the ending P atoms of DNA to keep it linear
+#include "posre_manual_chain_G.itp"
+
+; Include water topology
+#include "./amber99bsc1.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "./amber99bsc1.ff/ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_A     1
+Protein_chain_B     1
+Protein_chain_C     1
+DNA_chain_F         1
+DNA_chain_G         1
+SOL         104332
+NA               320
+CL               203
+
+

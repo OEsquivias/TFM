@@ -1,0 +1,348 @@
++ env
++ sort
+}
+ARC=linux-x64
+COLORTERM=1
+COLUMNS=80
+CONSOLE=/dev/console
+CPATH=/datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/include:/datos/easybuild/SLES11SP3/sandybridge/software/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/include:/datos/easybuild/SLES11SP3/sandybridge/software/FFTW/3.3.3-gompi-1.4.10/include:/datos/easybuild/SLES11SP3/sandybridge/software/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/include:/datos/easybuild/SLES11SP3/sandybridge/software/OpenMPI/1.8.1-GCC-4.8.3/include:/datos/easybuild/SLES11SP3/sandybridge/software/hwloc/1.9-GCC-4.8.3/include:/datos/easybuild/SLES11SP3/sandybridge/software/numactl/2.0.9-GCC-4.8.3/include:/datos/easybuild/SLES11SP3/sandybridge/software/GCC/4.8.3/include
+CPU=x86_64
+crashkernel=256M-:128M
+CSHEDIT=emacs
+CVS_RSH=ssh
+DO_CONFIRM=
+EASYBUILD_PREFIX=/datos/easybuild/SLES11SP3/sandybridge
+EASYBUILD_SOURCEPATH=/datos/easybuild/src
+EASYBUILD_TMP_LOGDIR=/datos/easybuild/tmp
+EBDEVELFFTW=/datos/easybuild/SLES11SP3/sandybridge/software/FFTW/3.3.3-gompi-1.4.10/easybuild/FFTW-3.3.3-gompi-1.4.10-easybuild-devel
+EBDEVELGCC=/datos/easybuild/SLES11SP3/sandybridge/software/GCC/4.8.3/easybuild/GCC-4.8.3-easybuild-devel
+EBDEVELGOMPI=/datos/easybuild/SLES11SP3/sandybridge/software/gompi/1.4.10/easybuild/gompi-1.4.10-easybuild-devel
+EBDEVELGOOLF=/datos/easybuild/SLES11SP3/sandybridge/software/goolf/1.4.10/easybuild/goolf-1.4.10-easybuild-devel
+EBDEVELGROMACS=/datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/easybuild/GROMACS-2016-goolf-1.4.10-hybrid-easybuild-devel
+EBDEVELHWLOC=/datos/easybuild/SLES11SP3/sandybridge/software/hwloc/1.9-GCC-4.8.3/easybuild/hwloc-1.9-GCC-4.8.3-easybuild-devel
+EBDEVELNUMACTL=/datos/easybuild/SLES11SP3/sandybridge/software/numactl/2.0.9-GCC-4.8.3/easybuild/numactl-2.0.9-GCC-4.8.3-easybuild-devel
+EBDEVELOPENBLAS=/datos/easybuild/SLES11SP3/sandybridge/software/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/easybuild/OpenBLAS-0.2.6-gompi-1.4.10-LAPACK-3.4.2-easybuild-devel
+EBDEVELOPENMPI=/datos/easybuild/SLES11SP3/sandybridge/software/OpenMPI/1.8.1-GCC-4.8.3/easybuild/OpenMPI-1.8.1-GCC-4.8.3-easybuild-devel
+EBDEVELSCALAPACK=/datos/easybuild/SLES11SP3/sandybridge/software/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/easybuild/ScaLAPACK-2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2-easybuild-devel
+EBMODULEPATH=/datos/easybuild/SLES11SP3/sandybridge/modules/all
+EBPREFIX=/datos/easybuild
+EBROOTFFTW=/datos/easybuild/SLES11SP3/sandybridge/software/FFTW/3.3.3-gompi-1.4.10
+EBROOTGCC=/datos/easybuild/SLES11SP3/sandybridge/software/GCC/4.8.3
+EBROOTGOMPI=/datos/easybuild/SLES11SP3/sandybridge/software/gompi/1.4.10
+EBROOTGOOLF=/datos/easybuild/SLES11SP3/sandybridge/software/goolf/1.4.10
+EBROOTGROMACS=/datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid
+EBROOTHWLOC=/datos/easybuild/SLES11SP3/sandybridge/software/hwloc/1.9-GCC-4.8.3
+EBROOTNUMACTL=/datos/easybuild/SLES11SP3/sandybridge/software/numactl/2.0.9-GCC-4.8.3
+EBROOTOPENBLAS=/datos/easybuild/SLES11SP3/sandybridge/software/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2
+EBROOTOPENMPI=/datos/easybuild/SLES11SP3/sandybridge/software/OpenMPI/1.8.1-GCC-4.8.3
+EBROOTSCALAPACK=/datos/easybuild/SLES11SP3/sandybridge/software/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2
+EBVERSIONFFTW=3.3.3
+EBVERSIONGCC=4.8.3
+EBVERSIONGOMPI=1.4.10
+EBVERSIONGOOLF=1.4.10
+EBVERSIONGROMACS=2016
+EBVERSIONHWLOC=1.9
+EBVERSIONNUMACTL=2.0.9
+EBVERSIONOPENBLAS=0.2.6
+EBVERSIONOPENMPI=1.8.1
+EBVERSIONSCALAPACK=2.0.2
+ENV=/etc/bash.bashrc
+ENVIRONMENT=BATCH
+FROM_HEADER=
+G_BROKEN_FILENAMES=1
+G_FILENAME_ENCODING=@locale,UTF-8,ISO-8859-15,CP1252
+GMX=/datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/bin/gmx
+HISTSIZE=1000
+HOME=/home/ramon
+HOSTNAME=perdiu44
+HOST=perdiu44
+HOSTTYPE=x86_64
+INFODIR=/usr/local/info:/usr/share/info:/usr/info
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info
+INIT_VERSION=sysvinit-2.86
+INPUTRC=/home/ramon/.inputrc
+JAVA_BINDIR=/usr/lib64/jvm/jre/bin
+JAVA_HOME=/usr/lib64/jvm/jre
+JAVA_ROOT=/usr/lib64/jvm/jre
+JOB_ID=34123
+JOB_NAME=WESTPA_b_4
+JOB_SCRIPT=/datos/SGE/default/spool/perdiu44/job_scripts/34123
+JRE_HOME=/usr/lib64/jvm/jre
+LANG=en_US.UTF-8
+LD_LIBRARY_PATH=/datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/lib64:/datos/easybuild/SLES11SP3/sandybridge/software/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/lib:/datos/easybuild/SLES11SP3/sandybridge/software/FFTW/3.3.3-gompi-1.4.10/lib:/datos/easybuild/SLES11SP3/sandybridge/software/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib:/datos/easybuild/SLES11SP3/sandybridge/software/OpenMPI/1.8.1-GCC-4.8.3/lib:/datos/easybuild/SLES11SP3/sandybridge/software/hwloc/1.9-GCC-4.8.3/lib:/datos/easybuild/SLES11SP3/sandybridge/software/numactl/2.0.9-GCC-4.8.3/lib:/datos/easybuild/SLES11SP3/sandybridge/software/GCC/4.8.3/lib/gcc/x86_64-unknown-linux-gnu/4.8.3:/datos/easybuild/SLES11SP3/sandybridge/software/GCC/4.8.3/lib64:/datos/easybuild/SLES11SP3/sandybridge/software/GCC/4.8.3/lib:/datos/SGE/lib/linux-amd
+LESS_ADVANCED_PREPROCESSOR=no
+LESSCLOSE=lessclose.sh %s %s
+LESSKEY=/etc/lesskey.bin
+LESS=-M -I
+LESSOPEN=lessopen.sh %s
+LIBRARY_PATH=/datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/lib64:/datos/easybuild/SLES11SP3/sandybridge/software/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2/lib:/datos/easybuild/SLES11SP3/sandybridge/software/FFTW/3.3.3-gompi-1.4.10/lib:/datos/easybuild/SLES11SP3/sandybridge/software/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2/lib:/datos/easybuild/SLES11SP3/sandybridge/software/OpenMPI/1.8.1-GCC-4.8.3/lib:/datos/easybuild/SLES11SP3/sandybridge/software/hwloc/1.9-GCC-4.8.3/lib:/datos/easybuild/SLES11SP3/sandybridge/software/numactl/2.0.9-GCC-4.8.3/lib:/datos/easybuild/SLES11SP3/sandybridge/software/GCC/4.8.3/lib64:/datos/easybuild/SLES11SP3/sandybridge/software/GCC/4.8.3/lib
+LINES=24
+_LMFILES_=/datos/easybuild/SLES11SP3/sandybridge/modules/all/GCC/4.8.3:/datos/easybuild/SLES11SP3/sandybridge/modules/all/numactl/2.0.9-GCC-4.8.3:/datos/easybuild/SLES11SP3/sandybridge/modules/all/hwloc/1.9-GCC-4.8.3:/datos/easybuild/SLES11SP3/sandybridge/modules/all/OpenMPI/1.8.1-GCC-4.8.3:/datos/easybuild/SLES11SP3/sandybridge/modules/all/gompi/1.4.10:/datos/easybuild/SLES11SP3/sandybridge/modules/all/OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2:/datos/easybuild/SLES11SP3/sandybridge/modules/all/FFTW/3.3.3-gompi-1.4.10:/datos/easybuild/SLES11SP3/sandybridge/modules/all/ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2:/datos/easybuild/SLES11SP3/sandybridge/modules/all/goolf/1.4.10:/datos/easybuild/SLES11SP3/sandybridge/modules/all/GROMACS/2016-goolf-1.4.10-hybrid
+LOADEDMODULES=GCC/4.8.3:numactl/2.0.9-GCC-4.8.3:hwloc/1.9-GCC-4.8.3:OpenMPI/1.8.1-GCC-4.8.3:gompi/1.4.10:OpenBLAS/0.2.6-gompi-1.4.10-LAPACK-3.4.2:FFTW/3.3.3-gompi-1.4.10:ScaLAPACK/2.0.2-gompi-1.4.10-OpenBLAS-0.2.6-LAPACK-3.4.2:goolf/1.4.10:GROMACS/2016-goolf-1.4.10-hybrid
+LOGNAME=ramon
+LS_COLORS=no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tgz=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.avi=01;35:*.bmp=01;35:*.fli=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mng=01;35:*.mov=01;35:*.mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*.tga=01;35:*.tif=01;35:*.xbm=01;35:*.xpm=01;35:*.dl=01;35:*.gl=01;35:*.wmv=01;35:*.aiff=00;32:*.au=00;32:*.mid=00;32:*.mp3=00;32:*.ogg=00;32:*.voc=00;32:*.wav=00;32:
+LS_OPTIONS=-N --color=tty -T 0
+MACHTYPE=x86_64-suse-linux
+MAIL=/var/spool/mail/ramon
+MANPATH=/datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/share/man:/datos/easybuild/SLES11SP3/sandybridge/software/FFTW/3.3.3-gompi-1.4.10/share/man:/datos/easybuild/SLES11SP3/sandybridge/software/OpenMPI/1.8.1-GCC-4.8.3/share/man:/datos/easybuild/SLES11SP3/sandybridge/software/hwloc/1.9-GCC-4.8.3/share/man:/datos/easybuild/SLES11SP3/sandybridge/software/numactl/2.0.9-GCC-4.8.3/share/man:/datos/easybuild/SLES11SP3/sandybridge/software/GCC/4.8.3/share/man:/datos/SGE/man:/usr/local/man:/usr/share/man
+MINICOM=-c on
+module=() {  eval `/usr/local/Modules/$MODULE_VERSION/bin/modulecmd bash $*`
+MODULEPATH=/home/ramon/.modules:/datos/easybuild/modules/all:/datos/easybuild/SLES11SP3/sandybridge/modules/legacy:/datos/easybuild/SLES11SP3/sandybridge/modules/all:/usr/local/Modules/versions:/usr/local/Modules/$MODULE_VERSION/modulefiles:/usr/local/Modules/modulefiles
+MODULESHOME=/usr/local/Modules/3.2.10
+MODULE_VERSION=3.2.10
+MODULE_VERSION_STACK=3.2.10
+MORE=-sl
+NHOSTS=1
+NNTPSERVER=news
+NQUEUES=1
+NSLOTS=20
+OS=SLES11SP3
+OSTYPE=linux
+PAGER=less
+PATH=/home/ramon/progs/westpa/bin:/datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/bin:/datos/easybuild/SLES11SP3/sandybridge/software/FFTW/3.3.3-gompi-1.4.10/bin:/datos/easybuild/SLES11SP3/sandybridge/software/OpenMPI/1.8.1-GCC-4.8.3/bin:/datos/easybuild/SLES11SP3/sandybridge/software/hwloc/1.9-GCC-4.8.3/bin:/datos/easybuild/SLES11SP3/sandybridge/software/numactl/2.0.9-GCC-4.8.3/bin:/datos/easybuild/SLES11SP3/sandybridge/software/GCC/4.8.3/bin:/datos/easybuild/software/EasyBuild/1.16.1/bin:/usr/local/Modules/3.2.10/bin:/datos/SGE/bin/linux-amd:/home/ramon/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/usr/games:/usr/lib64/jvm/jre/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin
+PE_HOSTFILE=/datos/SGE/default/spool/perdiu44/active_jobs/34123.1/pe_hostfile
+PE=smp
+PKG_CONFIG_PATH=/datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/lib64/pkgconfig:/datos/easybuild/SLES11SP3/sandybridge/software/FFTW/3.3.3-gompi-1.4.10/lib/pkgconfig:/datos/easybuild/SLES11SP3/sandybridge/software/OpenMPI/1.8.1-GCC-4.8.3/lib/pkgconfig:/datos/easybuild/SLES11SP3/sandybridge/software/hwloc/1.9-GCC-4.8.3/lib/pkgconfig
+PREVLEVEL=N
+PROFILEREAD=true
+PROPAGATION_DEBUG=1
+PWD=/s/ramon/WESTPA_b_4
+PYTHONPATH=/home/ramon/progs/westpa/lib/blessings:/home/ramon/progs/westpa/lib/h5py:/home/ramon/progs/westpa/lib/wwmgr:/home/ramon/progs/westpa/src:/home/ramon/progs/westpa/lib/west_tools:/datos/easybuild/software/EasyBuild/1.16.1/lib/python2.7/site-packages
+PYTHONSTARTUP=/etc/pythonstart
+PYTHONWARNINGS=d
+QUEUE=all.q
+REDIRECT=/dev/ttyS1
+REQNAME=WESTPA_b_4
+REQUEST=WESTPA_b_4
+RESTARTED=0
+ROOTFS_BLKDEV=/dev/iqac_vg/root
+ROOTFS_FSCK=0
+ROOTFS_FSTYPE=ext3
+RUNLEVEL=3
+SEG_DEBUG=1
+SELINUX_INIT=YES
+SGE_ACCOUNT=sge
+SGE_ARCH=linux-x64
+SGE_BINARY_PATH=/datos/SGE/bin/linux-x64
+SGE_CELL=default
+SGE_CLUSTER_NAME=p6444
+SGE_CWD_PATH=/home/ramon
+SGE_JOB_SPOOL_DIR=/datos/SGE/default/spool/perdiu44/active_jobs/34123.1
+SGE_O_HOME=/home/ramon
+SGE_O_HOST=login
+SGE_O_LOGNAME=ramon
+SGE_O_MAIL=/var/mail/ramon
+SGE_O_PATH=/datos/easybuild/software/EasyBuild/1.16.1/bin:/usr/local/Modules/3.2.10/bin:/datos/SGE/bin/linux-amd:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+SGE_O_SHELL=/bin/bash
+SGE_O_WORKDIR=/home/ramon/PCNA
+SGE_ROOT=/datos/SGE
+SGE_RSH_COMMAND=builtin
+SGE_STDERR_PATH=/home/ramon/WESTPA_b_4.e34123
+SGE_STDIN_PATH=/dev/null
+SGE_STDOUT_PATH=/home/ramon/WESTPA_b_4.o34123
+SGE_TASK_FIRST=undefined
+SGE_TASK_ID=undefined
+SGE_TASK_LAST=undefined
+SGE_TASK_STEPSIZE=undefined
+SHELL=/bin/bash
+SHLVL=5
+SIM_NAME=WESTPA_b_4
+SPLASHCFG=
+SPLASH=no
+splash=silent
+TERM=vt102
+TMPDIR=/s/34123.1.all.q
+TMP=/s/34123.1.all.q
+USER_MODULES_DIR=/home/ramon/.modules
+USER=ramon
+_=/usr/bin/env
+WEST_BIN=/home/ramon/progs/westpa/bin
+WEST_CURRENT_ITER=15
+WEST_CURRENT_SEG_DATA_REF=/s/ramon/WESTPA_b_4/traj_segs/000015/000070
+WEST_CURRENT_SEG_ID=70
+WEST_CURRENT_SEG_INITPOINT_TYPE=SEG_INITPOINT_CONTINUES
+WEST_PARENT_DATA_REF=/s/ramon/WESTPA_b_4/traj_segs/000014/000056
+WEST_PARENT_ID=56
+WEST_PCOORD_RETURN=/s/34123.1.all.q/tmpBCElEu
+WEST_PYTHON=/home/ramon/miniconda2/bin/python2.7
+WEST_PYTHONPATH=/home/ramon/progs/westpa/lib/blessings:/home/ramon/progs/westpa/lib/h5py:/home/ramon/progs/westpa/lib/wwmgr:/home/ramon/progs/westpa/src:/home/ramon/progs/westpa/lib/west_tools
+WEST_RAND128=323522029928553347143572520050887732231
+WEST_RAND16=57392
+WEST_RAND32=3045039052
+WEST_RAND64=11428706293982723318
+WEST_RANDFLOAT=0.762293439499
+WEST_ROOT=/home/ramon/progs/westpa
+WEST_SIM_ROOT=/s/ramon/WESTPA_b_4
+WM_PROCESS_INDEX=7
+XDG_CONFIG_DIRS=/etc/xdg
+XDG_DATA_DIRS=/usr/share
+XKEYSYMDB=/usr/share/X11/XKeysymDB
+XNLSPATH=/usr/X11R6/lib/X11/nls
++ cd /s/ramon/WESTPA_b_4
++ mkdir -pv /s/ramon/WESTPA_b_4/traj_segs/000015/000070
+mkdir: created directory `/s/ramon/WESTPA_b_4/traj_segs/000015/000070'
++ cd /s/ramon/WESTPA_b_4/traj_segs/000015/000070
++ ln -sv /s/ramon/WESTPA_b_4/gromacs_config/amber99bsc1.ff /s/ramon/WESTPA_b_4/gromacs_config/frame0.gro /s/ramon/WESTPA_b_4/gromacs_config/frame0_Protein_DNA.gro /s/ramon/WESTPA_b_4/gromacs_config/index.ndx /s/ramon/WESTPA_b_4/gromacs_config/md-continue.mdp /s/ramon/WESTPA_b_4/gromacs_config/md-genvel.mdp /s/ramon/WESTPA_b_4/gromacs_config/mdout.mdp /s/ramon/WESTPA_b_4/gromacs_config/md.tpr /s/ramon/WESTPA_b_4/gromacs_config/posre_manual_chain_F.itp /s/ramon/WESTPA_b_4/gromacs_config/posre_manual_chain_G.itp /s/ramon/WESTPA_b_4/gromacs_config/topol_DNA_chain_F.itp /s/ramon/WESTPA_b_4/gromacs_config/topol_DNA_chain_G.itp /s/ramon/WESTPA_b_4/gromacs_config/topol_Protein_chain_A.itp /s/ramon/WESTPA_b_4/gromacs_config/topol_Protein_chain_B.itp /s/ramon/WESTPA_b_4/gromacs_config/topol_Protein_chain_C.itp /s/ramon/WESTPA_b_4/gromacs_config/topol.top .
+`./amber99bsc1.ff' -> `/s/ramon/WESTPA_b_4/gromacs_config/amber99bsc1.ff'
+`./frame0.gro' -> `/s/ramon/WESTPA_b_4/gromacs_config/frame0.gro'
+`./frame0_Protein_DNA.gro' -> `/s/ramon/WESTPA_b_4/gromacs_config/frame0_Protein_DNA.gro'
+`./index.ndx' -> `/s/ramon/WESTPA_b_4/gromacs_config/index.ndx'
+`./md-continue.mdp' -> `/s/ramon/WESTPA_b_4/gromacs_config/md-continue.mdp'
+`./md-genvel.mdp' -> `/s/ramon/WESTPA_b_4/gromacs_config/md-genvel.mdp'
+`./mdout.mdp' -> `/s/ramon/WESTPA_b_4/gromacs_config/mdout.mdp'
+`./md.tpr' -> `/s/ramon/WESTPA_b_4/gromacs_config/md.tpr'
+`./posre_manual_chain_F.itp' -> `/s/ramon/WESTPA_b_4/gromacs_config/posre_manual_chain_F.itp'
+`./posre_manual_chain_G.itp' -> `/s/ramon/WESTPA_b_4/gromacs_config/posre_manual_chain_G.itp'
+`./topol_DNA_chain_F.itp' -> `/s/ramon/WESTPA_b_4/gromacs_config/topol_DNA_chain_F.itp'
+`./topol_DNA_chain_G.itp' -> `/s/ramon/WESTPA_b_4/gromacs_config/topol_DNA_chain_G.itp'
+`./topol_Protein_chain_A.itp' -> `/s/ramon/WESTPA_b_4/gromacs_config/topol_Protein_chain_A.itp'
+`./topol_Protein_chain_B.itp' -> `/s/ramon/WESTPA_b_4/gromacs_config/topol_Protein_chain_B.itp'
+`./topol_Protein_chain_C.itp' -> `/s/ramon/WESTPA_b_4/gromacs_config/topol_Protein_chain_C.itp'
+`./topol.top' -> `/s/ramon/WESTPA_b_4/gromacs_config/topol.top'
++ '[' SEG_INITPOINT_CONTINUES = SEG_INITPOINT_CONTINUES ']'
++ sed s/RAND/57392/g ./md-continue.mdp
++ ln -sv /s/ramon/WESTPA_b_4/traj_segs/000014/000056/seg.edr ./parent.edr
+`./parent.edr' -> `/s/ramon/WESTPA_b_4/traj_segs/000014/000056/seg.edr'
++ ln -sv /s/ramon/WESTPA_b_4/traj_segs/000014/000056/seg.gro ./parent.gro
+`./parent.gro' -> `/s/ramon/WESTPA_b_4/traj_segs/000014/000056/seg.gro'
++ /datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/bin/gmx grompp -f md.mdp -p topol.top -c parent.gro -r frame0.gro -e parent.edr -o seg.tpr -po md_out.mdp -maxwarn 1
+                       :-) GROMACS - gmx grompp, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016
+Executable:   /datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/bin/gmx
+Data prefix:  /datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid
+Working dir:  /s/ramon/WESTPA_b_4/traj_segs/000015/000070
+Command line:
+  gmx grompp -f md.mdp -p topol.top -c parent.gro -r frame0.gro -e parent.edr -o seg.tpr -po md_out.mdp -maxwarn 1
+
+
+NOTE 1 [file md.mdp]:
+  You are doing a continuation with SD or BD, make sure that ld_seed is
+  different from the previous run (using ld_seed=-1 will ensure this)
+
+
+NOTE 2 [file md.mdp]:
+  You are doing a continuation with SD or BD, make sure that ld_seed is
+  different from the previous run (using ld_seed=-1 will ensure this)
+
+Generated 2485 of the 2485 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 0.5
+Generated 2485 of the 2485 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+Excluding 3 bonded neighbours molecule type 'Protein_chain_B'
+Excluding 3 bonded neighbours molecule type 'Protein_chain_C'
+Excluding 3 bonded neighbours molecule type 'DNA_chain_F'
+Excluding 3 bonded neighbours molecule type 'DNA_chain_G'
+Excluding 2 bonded neighbours molecule type 'SOL'
+Excluding 1 bonded neighbours molecule type 'NA'
+Excluding 1 bonded neighbours molecule type 'CL'
+Removing all charge groups because cutoff-scheme=Verlet
+The center of mass of the position restraint coord's is 12.236 12.388  5.852
+The center of mass of the position restraint coord's is 12.236 12.388  5.852
+Number of degrees of freedom in T-Coupling group System is 655976.00
+Estimate for the relative computational load of the PME mesh part: 0.34
+
+There were 2 notes
+
+GROMACS reminds you: "It's Bicycle Repair Man !" (Monty Python)
+
+turning all bonds into constraints...
+turning all bonds into constraints...
+turning all bonds into constraints...
+turning all bonds into constraints...
+turning all bonds into constraints...
+turning all bonds into constraints...
+turning all bonds into constraints...
+turning all bonds into constraints...
+Analysing residue names:
+There are:   765    Protein residues
+There are:    80        DNA residues
+There are: 104332      Water residues
+There are:   523        Ion residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+Calculated rlist for 1x1 atom pair-list as 0.902 nm, buffer size 0.102 nm
+Set rlist, assuming 4x4 atom pair-list, to 0.836 nm, buffer size 0.036 nm
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 144x144x144, spacing 0.116 0.116 0.116
+This run will generate roughly 28 Mb of data
++ /datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/bin/gmx mdrun -nt 1 -pin on -pinoffset 7 -s seg.tpr -deffnm seg
+                       :-) GROMACS - gmx mdrun, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2016
+Executable:   /datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid/bin/gmx
+Data prefix:  /datos/easybuild/SLES11SP3/broadwell/software/GROMACS/2016-goolf-1.4.10-hybrid
+Working dir:  /s/ramon/WESTPA_b_4/traj_segs/000015/000070
+Command line:
+  gmx mdrun -nt 1 -pin on -pinoffset 7 -s seg.tpr -deffnm seg
+
+
+Running on 1 node with total 20 cores, 20 logical cores
+Hardware detected:
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
+    SIMD instructions most likely to fit this hardware: AVX_256
+    SIMD instructions selected at GROMACS compile time: AVX_256
+
+  Hardware topology: Full, with devices
+
+Reading file seg.tpr, VERSION 2016 (single precision)
+Using 1 MPI thread
+Using 1 OpenMP thread 
+
+
+Overriding thread affinity set outside gmx mdrun
+
+Applying core pinning offset 7
+starting mdrun 'Protein in water'
+20000 steps,     40.0 ps.
